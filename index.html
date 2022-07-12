@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="Hexo Theme Keep">
     <meta name="description" content="Hexo Theme Keep">
-    <meta name="author" content="Keep Team">
+    <meta name="author" content="杨孟帆">
     
     <title>
         
-        Keep Theme
+        Marvin Blog
     </title>
     
 <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="shortcut icon" href="/images/logo.png">
     
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/logo.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":true},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -29,6 +29,8 @@
 
 <body>
 <div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
     
 
     
@@ -48,7 +50,7 @@
         <div class="left">
             
             <a class="logo-title" href="/">
-                Keep Theme
+                Marvin Blog
             </a>
         </div>
 
@@ -73,9 +75,15 @@
                         </li>
                     
                     
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -120,56 +128,28 @@
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2022/07/08/test1/">
-                        test1
+                    <a href="/2022/07/12/%E5%86%85%E5%AD%98%E8%A7%92%E5%BA%A6%E7%9C%8BJS/">
+                        浅谈从内存角度看Js
                     </a>
                 </h3>
 
                 <div class="home-article-content markdown-body">
                     
-                        . 了解Node
-Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时, 它不是一门新的语言哈。
-我们暂时不用太在意它的一些知识点，不需要现在学习。
-目前只需要知道如何安装，然后如何使用一些简单的命令来实现我们现阶段想...
+                        JS内存机制本标题中主要借鉴极客时间李兵浏览器工作原理与实践
+JavaScript 就是动态语言，因为在声明变量之前并不需要确认其数据类型。
+支持隐式类型转换的语言称为弱类型语言，不支持隐式类型转换的语言称为强类型语言
+ 在 JavaScript 的...
                     
                 </div>
 
                 <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Jul 08 2022 09:48:35 GMT+0800">2022-07-08</span></span>
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Jul 12 2022 11:22:16 GMT+0800">2022-07-12</span></span>
         
         
     </div>
 
-    <a href="/2022/07/08/test1/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2022/07/07/hello-world/">
-                        Hello World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, yo...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Thu Jul 07 2022 16:41:16 GMT+0800">2022-07-07</span></span>
-        
-        
-    </div>
-
-    <a href="/2022/07/07/hello-world/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a href="/2022/07/12/%E5%86%85%E5%AD%98%E8%A7%92%E5%BA%A6%E7%9C%8BJS/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -201,8 +181,22 @@ Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时, 它不是一�
               <span>2020</span>
               -
             
-            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">杨孟帆</a>
         </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
         
         <div class="theme-info info-item">
             Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
@@ -268,6 +262,35 @@ Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时, 它不是一�
 
 
     
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 
 </main>
 
@@ -287,6 +310,14 @@ Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时, 它不是一�
 
 
 
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
 
 
 
