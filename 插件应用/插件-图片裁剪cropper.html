@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jq-cropper | M-study</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="OIP-C.jfif">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.6c38bb4e.css" as="style"><link rel="preload" href="/assets/js/app.8c529f76.js" as="script"><link rel="preload" href="/assets/js/2.cbedeaad.js" as="script"><link rel="preload" href="/assets/js/28.e192e52f.js" as="script"><link rel="prefetch" href="/assets/js/10.c8323b9a.js"><link rel="prefetch" href="/assets/js/11.daca5a3a.js"><link rel="prefetch" href="/assets/js/12.ddd52271.js"><link rel="prefetch" href="/assets/js/13.5cbc63a1.js"><link rel="prefetch" href="/assets/js/14.59665456.js"><link rel="prefetch" href="/assets/js/15.9c873ff0.js"><link rel="prefetch" href="/assets/js/16.feb05796.js"><link rel="prefetch" href="/assets/js/17.7ac3c989.js"><link rel="prefetch" href="/assets/js/18.9890fb39.js"><link rel="prefetch" href="/assets/js/19.cba51b28.js"><link rel="prefetch" href="/assets/js/20.3284289d.js"><link rel="prefetch" href="/assets/js/21.0baf4df8.js"><link rel="prefetch" href="/assets/js/22.06ba011d.js"><link rel="prefetch" href="/assets/js/23.e92a72a6.js"><link rel="prefetch" href="/assets/js/24.3eeeb72f.js"><link rel="prefetch" href="/assets/js/25.3c87722e.js"><link rel="prefetch" href="/assets/js/26.89115ea1.js"><link rel="prefetch" href="/assets/js/27.e8dbc004.js"><link rel="prefetch" href="/assets/js/29.7bc22aec.js"><link rel="prefetch" href="/assets/js/3.a6f0b175.js"><link rel="prefetch" href="/assets/js/30.4a944b57.js"><link rel="prefetch" href="/assets/js/31.1a7d4379.js"><link rel="prefetch" href="/assets/js/32.06d3f4f1.js"><link rel="prefetch" href="/assets/js/33.58323a11.js"><link rel="prefetch" href="/assets/js/34.24a9778f.js"><link rel="prefetch" href="/assets/js/35.a384150e.js"><link rel="prefetch" href="/assets/js/36.e4e6241b.js"><link rel="prefetch" href="/assets/js/37.2827add8.js"><link rel="prefetch" href="/assets/js/4.252279d4.js"><link rel="prefetch" href="/assets/js/5.8865fc04.js"><link rel="prefetch" href="/assets/js/6.028b375b.js"><link rel="prefetch" href="/assets/js/7.07278a0f.js"><link rel="prefetch" href="/assets/js/8.7d602c22.js"><link rel="prefetch" href="/assets/js/9.bdd22af9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6c38bb4e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/OIP-C.jfif" alt="M-study" class="logo"> <span class="site-name can-hide">M-study</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/Me/" class="nav-link">
+  Me
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Marvin-Blog" class="dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow down"></span></button> <button type="button" aria-label="Marvin-Blog" class="mobile-dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mar130vin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/yangmengfan-130" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/Me/" class="nav-link">
+  Me
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Marvin-Blog" class="dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow down"></span></button> <button type="button" aria-label="Marvin-Blog" class="mobile-dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mar130vin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/yangmengfan-130" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vuepress/vuepress+blog.html" class="sidebar-link">vuepress + github blog</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>js高级</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js高级/js高级-从内存看代码.html" class="sidebar-link">js高级-从内存看代码</a></li><li><a href="/js高级/js高级-数组方法.html" class="sidebar-link">js高级-数组方法</a></li><li><a href="/js高级/js高级-手写题.html" class="sidebar-link">js高级-手写题</a></li><li><a href="/js高级/js高级-循环中的变量.html" class="sidebar-link">js高级-循环中的变量</a></li><li><a href="/js高级/js高级-ES6.html" class="sidebar-link">js高级-ES6</a></li><li><a href="/js高级/js高级-promise与事件循环.html" class="sidebar-link">js高级-promise与事件循环</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>插件应用</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/插件应用/插件-图片裁剪cropper.html" class="active sidebar-link">插件-图片裁剪cropper</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#jq-cropper" class="sidebar-link">jq-cropper</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#文档" class="sidebar-link">文档</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#html格式" class="sidebar-link">html格式</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#css" class="sidebar-link">css</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#js" class="sidebar-link">js</a></li></ul></li><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#vue2-cropper" class="sidebar-link">vue2 cropper</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#组件中配置" class="sidebar-link">组件中配置</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件-图片裁剪cropper.html#在组件实例中应用" class="sidebar-link">在组件实例中应用</a></li></ul></li></ul></li><li><a href="/插件应用/插件-dayJs使用.html" class="sidebar-link">插件-dayJs使用</a></li><li><a href="/插件应用/插件-flexible.js.html" class="sidebar-link">插件-flexible.js</a></li><li><a href="/插件应用/插件js-网络请求axios.html" class="sidebar-link">插件js-网络请求axios</a></li><li><a href="/插件应用/插件vue-vant.html" class="sidebar-link">插件vue-vant</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>一些案例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/经典案例/经典案例vue-图片格式转换.html" class="sidebar-link">经典案例vue-图片格式转换</a></li><li><a href="/经典案例/经典案例js-渲染分页.html" class="sidebar-link">经典案例js-渲染分页</a></li><li><a href="/经典案例/经典案例admin常用设置.html" class="sidebar-link">经典案例admin常用设置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>网络相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/网络/网络-跨域.html" class="sidebar-link">网络-跨域</a></li><li><a href="/网络/网络-协议&amp;ajax.html" class="sidebar-link">网络-协议&amp;ajax</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>VueSomthing</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/VueSomthing/Vue数据代理.html" class="sidebar-link">Vue数据代理</a></li><li><a href="/VueSomthing/Vue2原理理解.html" class="sidebar-link">Vue2原理理解</a></li><li><a href="/VueSomthing/Vue-router.html" class="sidebar-link">Vue-router</a></li><li><a href="/VueSomthing/Vue2img&amp;cos.html" class="sidebar-link">Vue2img&amp;cos</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="jq-cropper"><a href="#jq-cropper" class="header-anchor">#</a> jq-cropper</h2> <h3 id="文档"><a href="#文档" class="header-anchor">#</a> 文档</h3> <blockquote><p><a href="https://github.com/fengyuanchen/cropperjs" target="_blank" rel="noopener noreferrer">fengyuanchen/cropperjs: JavaScript image cropper. (github.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h3 id="html格式"><a href="#html格式" class="header-anchor">#</a> html格式</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/images/sample.jpg<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>image<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 需要裁剪的图片 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>top<span class="token punctuation">&quot;</span></span><span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>preview_image<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 预览图 预览图是div！！！！！cropper会自动在div中生成canvas--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span> <span class="token attr-name">accept</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>image/*<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">display</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>img_input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">hidden</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 上传图片框隐藏(hidden)掉（觉得好看的可以直接触发）通过下面的按钮(.upload_img)触发 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>upload_img<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>上传图片<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><h3 id="css"><a href="#css" class="header-anchor">#</a> css</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.left</span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 280px<span class="token punctuation">;</span>
+    <span class="token selector">#image</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      // 裁剪图片插件的css代码
+      <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+      <span class="token property">max-width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.right</span><span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token selector">.top</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 140px<span class="token punctuation">;</span>
+      <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        
+      <span class="token selector">canvas</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="js"><a href="#js" class="header-anchor">#</a> js</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> image <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'image'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> cropper <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cropper</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">aspectRatio</span><span class="token operator">:</span> <span class="token number">20</span><span class="token operator">/</span><span class="token number">14</span><span class="token punctuation">,</span>
+  <span class="token function">crop</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 1. 获取裁剪框中的图片 （canvasData的值是一个&lt;canvas&gt;图片标签, 我们完全可以把&lt;canvas&gt;当成&lt;img&gt;）</span>
+    <span class="token keyword">const</span> canvasData <span class="token operator">=</span> cropper<span class="token punctuation">.</span><span class="token function">getCroppedCanvas</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token comment">//图片宽度</span>
+      <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">140</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#preview_image'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span>canvasData<span class="token punctuation">)</span>
+    获取完成后要放到div盒子里面
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//通过按钮触发input框，如果觉得input框好看的可以不需要这步，尽量取消按钮的默认事件，按钮可能在form标签中会刷新页面</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.upload_img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#img_input'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//input触发条件是change</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#img_input'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'change'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// this.files[0] 用户选择的第一张图片, 不是图片的url地址，但是&lt;img&gt; 里的src属性要的是一个图片的url地址，所以我们需要通过URL.createObjectURL() 这个方法把图片转成成一个url地址</span>
+  <span class="token keyword">let</span> img_url <span class="token operator">=</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token comment">// 错误：由于这个&lt;img&gt;已经被cropper这个插件所控制，所以更改&lt;img&gt;的src值无用</span>
+  <span class="token comment">// $('#avatar_big_img').attr('src', img_url)</span>
+  <span class="token comment">// 正确：替换裁剪区的图片地址</span>
+  cropper<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>img_url<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="vue2-cropper"><a href="#vue2-cropper" class="header-anchor">#</a> vue2 cropper</h2> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language-cmd extra-class"><pre class="language-text"><code>npm install cropperjs
+</code></pre></div><h3 id="组件中配置"><a href="#组件中配置" class="header-anchor">#</a> 组件中配置</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'cropperjs/dist/cropper.css'</span>
+<span class="token keyword">import</span> Cropper <span class="token keyword">from</span> <span class="token string">'cropperjs'</span>
+</code></pre></div><h3 id="在组件实例中应用"><a href="#在组件实例中应用" class="header-anchor">#</a> 在组件实例中应用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;updata-photo&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>img <span class="token operator">:</span>src<span class="token operator">=</span><span class="token string">&quot;userPhoto&quot;</span> ref<span class="token operator">=</span><span class="token string">&quot;img&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;toolbar&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>span <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;cancel&quot;</span> @click<span class="token operator">=</span><span class="token string">&quot;$emit('close')&quot;</span><span class="token operator">&gt;</span>取消<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>span <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;confirm&quot;</span> @click<span class="token operator">=</span><span class="token string">&quot;confirm&quot;</span><span class="token operator">&gt;</span>完成<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> updateUserPhotoAPI <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../../api/index.js'</span>
+<span class="token keyword">import</span> <span class="token string">'cropperjs/dist/cropper.css'</span>
+<span class="token keyword">import</span> Cropper <span class="token keyword">from</span> <span class="token string">'cropperjs'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'UserPhoto'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">model</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">prop</span><span class="token operator">:</span> <span class="token string">'userPhoto'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">event</span><span class="token operator">:</span> <span class="token string">'UpdatePhoto'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">userPhoto</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">cropper</span><span class="token operator">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">initCropper</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 获取图片页面元素</span>
+      <span class="token keyword">const</span> image <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>img
+      <span class="token keyword">this</span><span class="token punctuation">.</span>cropper <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cropper</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">viewMode</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 定义裁剪模式，0：裁剪框可以扩展到画布外， 1,2,3会将裁剪框限制在画布内</span>
+        <span class="token literal-property property">dragMode</span><span class="token operator">:</span> <span class="token string">'move'</span><span class="token punctuation">,</span> <span class="token comment">// 拖动模式 move: 移动画布 crop 截图模式</span>
+        <span class="token literal-property property">aspectRatio</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 截图比例, 1:1可以简写为1</span>
+        <span class="token literal-property property">autoCropArea</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 自动截图区</span>
+        <span class="token literal-property property">cropBoxMovable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 截图区域是否可以移动</span>
+        <span class="token literal-property property">cropBoxResizable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 截图区的缩放功能</span>
+        <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示默认背景</span>
+        <span class="token literal-property property">movable</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 背景图片是否可以移动，默认true</span>
+        <span class="token comment">// crop (event) {</span>
+        <span class="token comment">//   // 当移动图片是会返回的各种数据（后端处理数据时用到）</span>
+        <span class="token comment">//   console.log('x轴', event.detail.x)</span>
+        <span class="token comment">//   console.log('y轴', event.detail.y)</span>
+        <span class="token comment">//   console.log('长度', event.detail.width)</span>
+        <span class="token comment">//   console.log('宽度', event.detail.height)</span>
+        <span class="token comment">//   console.log('旋转角', event.detail.rotate)</span>
+        <span class="token comment">//   console.log('滚动x轴距离', event.detail.scaleX)</span>
+        <span class="token comment">//   console.log('滚动y轴距离', event.detail.scaleY)</span>
+        <span class="token comment">// }</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//confirm () {</span>
+  	<span class="token comment">//	console.log(this.cropper.getData())</span>
+    <span class="token comment">//  处理数据（把数据传递给后端，后端全权处理）</span>
+    <span class="token comment">//},</span>
+    <span class="token function">confirm</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// console.log(this.cropper.getData())</span>
+      <span class="token comment">// this.cropper.getCroppedCanvas()这里生成的是canvas对象</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>cropper<span class="token punctuation">.</span><span class="token function">getCroppedCanvas</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBlob</span><span class="token punctuation">(</span><span class="token parameter">blob</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 这里是getCroppedCanvas()中的blob</span>
+        <span class="token comment">// 使用浏览器的原生 canvas.toBlob  API来做压缩工作，这意味着它是有损压缩。为了获得更好的图像质量，可以将原始图像和裁剪后的数据上传到服务器，并在服务器上进行裁剪工作。</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">updateUserPhoto</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">async</span> <span class="token function">updateUserPhoto</span> <span class="token punctuation">(</span><span class="token parameter">img</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> formDate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        formDate<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'photo'</span><span class="token punctuation">,</span> img<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token literal-property property">data</span><span class="token operator">:</span> res <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">updateUserPhotoAPI</span><span class="token punctuation">(</span>formDate<span class="token punctuation">)</span>
+        <span class="token comment">// console.log(res)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$toast<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">'更新成功'</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'updatePhoto'</span><span class="token punctuation">,</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>photo<span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$toast<span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span><span class="token string">'更新失败'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initCropper</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>style lang<span class="token operator">=</span><span class="token string">&quot;less&quot;</span> scoped<span class="token operator">&gt;</span>
+<span class="token punctuation">.</span>updata<span class="token operator">-</span>photo<span class="token punctuation">{</span>
+  background<span class="token operator">-</span>color<span class="token operator">:</span> #<span class="token number">000</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  img<span class="token punctuation">{</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">.</span>toolbar<span class="token punctuation">{</span>
+    <span class="token comment">// 自身</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> fixed<span class="token punctuation">;</span>
+    <span class="token literal-property property">bottom</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">right</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">padding</span><span class="token operator">:</span> 20px 30px<span class="token punctuation">;</span>
+    <span class="token comment">// 子盒子</span>
+    <span class="token literal-property property">display</span><span class="token operator">:</span> flex<span class="token punctuation">;</span>
+    justify<span class="token operator">-</span>content<span class="token operator">:</span> space<span class="token operator">-</span>between<span class="token punctuation">;</span>
+    <span class="token literal-property property">color</span><span class="token operator">:</span> #fff<span class="token punctuation">;</span>
+    font<span class="token operator">-</span>size<span class="token operator">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+
+</code></pre></div><blockquote><p><a href="https://chenfengyuan.com/" target="_blank" rel="noopener noreferrer">陈凤元<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> https://github.com/fengyuanchen/cropperjs</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js高级/js高级-promise与事件循环.html" class="prev">
+        js高级-promise与事件循环
+      </a></span> <span class="next"><a href="/插件应用/插件-dayJs使用.html">
+        插件-dayJs使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8c529f76.js" defer></script><script src="/assets/js/2.cbedeaad.js" defer></script><script src="/assets/js/28.e192e52f.js" defer></script>
+  </body>
+</html>

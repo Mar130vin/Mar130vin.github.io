@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>axios插件应用 | M-study</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="OIP-C.jfif">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.6c38bb4e.css" as="style"><link rel="preload" href="/assets/js/app.8c529f76.js" as="script"><link rel="preload" href="/assets/js/2.cbedeaad.js" as="script"><link rel="preload" href="/assets/js/29.7bc22aec.js" as="script"><link rel="prefetch" href="/assets/js/10.c8323b9a.js"><link rel="prefetch" href="/assets/js/11.daca5a3a.js"><link rel="prefetch" href="/assets/js/12.ddd52271.js"><link rel="prefetch" href="/assets/js/13.5cbc63a1.js"><link rel="prefetch" href="/assets/js/14.59665456.js"><link rel="prefetch" href="/assets/js/15.9c873ff0.js"><link rel="prefetch" href="/assets/js/16.feb05796.js"><link rel="prefetch" href="/assets/js/17.7ac3c989.js"><link rel="prefetch" href="/assets/js/18.9890fb39.js"><link rel="prefetch" href="/assets/js/19.cba51b28.js"><link rel="prefetch" href="/assets/js/20.3284289d.js"><link rel="prefetch" href="/assets/js/21.0baf4df8.js"><link rel="prefetch" href="/assets/js/22.06ba011d.js"><link rel="prefetch" href="/assets/js/23.e92a72a6.js"><link rel="prefetch" href="/assets/js/24.3eeeb72f.js"><link rel="prefetch" href="/assets/js/25.3c87722e.js"><link rel="prefetch" href="/assets/js/26.89115ea1.js"><link rel="prefetch" href="/assets/js/27.e8dbc004.js"><link rel="prefetch" href="/assets/js/28.e192e52f.js"><link rel="prefetch" href="/assets/js/3.a6f0b175.js"><link rel="prefetch" href="/assets/js/30.4a944b57.js"><link rel="prefetch" href="/assets/js/31.1a7d4379.js"><link rel="prefetch" href="/assets/js/32.06d3f4f1.js"><link rel="prefetch" href="/assets/js/33.58323a11.js"><link rel="prefetch" href="/assets/js/34.24a9778f.js"><link rel="prefetch" href="/assets/js/35.a384150e.js"><link rel="prefetch" href="/assets/js/36.e4e6241b.js"><link rel="prefetch" href="/assets/js/37.2827add8.js"><link rel="prefetch" href="/assets/js/4.252279d4.js"><link rel="prefetch" href="/assets/js/5.8865fc04.js"><link rel="prefetch" href="/assets/js/6.028b375b.js"><link rel="prefetch" href="/assets/js/7.07278a0f.js"><link rel="prefetch" href="/assets/js/8.7d602c22.js"><link rel="prefetch" href="/assets/js/9.bdd22af9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6c38bb4e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/OIP-C.jfif" alt="M-study" class="logo"> <span class="site-name can-hide">M-study</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/Me/" class="nav-link">
+  Me
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Marvin-Blog" class="dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow down"></span></button> <button type="button" aria-label="Marvin-Blog" class="mobile-dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mar130vin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/yangmengfan-130" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/Me/" class="nav-link">
+  Me
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Marvin-Blog" class="dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow down"></span></button> <button type="button" aria-label="Marvin-Blog" class="mobile-dropdown-title"><span class="title">Marvin-Blog</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mar130vin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/yangmengfan-130" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vuepress/vuepress+blog.html" class="sidebar-link">vuepress + github blog</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>js高级</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js高级/js高级-从内存看代码.html" class="sidebar-link">js高级-从内存看代码</a></li><li><a href="/js高级/js高级-数组方法.html" class="sidebar-link">js高级-数组方法</a></li><li><a href="/js高级/js高级-手写题.html" class="sidebar-link">js高级-手写题</a></li><li><a href="/js高级/js高级-循环中的变量.html" class="sidebar-link">js高级-循环中的变量</a></li><li><a href="/js高级/js高级-ES6.html" class="sidebar-link">js高级-ES6</a></li><li><a href="/js高级/js高级-promise与事件循环.html" class="sidebar-link">js高级-promise与事件循环</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>插件应用</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/插件应用/插件-图片裁剪cropper.html" class="sidebar-link">插件-图片裁剪cropper</a></li><li><a href="/插件应用/插件-dayJs使用.html" class="sidebar-link">插件-dayJs使用</a></li><li><a href="/插件应用/插件-flexible.js.html" class="sidebar-link">插件-flexible.js</a></li><li><a href="/插件应用/插件js-网络请求axios.html" class="active sidebar-link">插件js-网络请求axios</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#axios插件应用" class="sidebar-link">axios插件应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#简单应用" class="sidebar-link">简单应用</a></li></ul></li><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#拦截器" class="sidebar-link">拦截器</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#传输图片" class="sidebar-link">传输图片</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#普通图片" class="sidebar-link">普通图片</a></li><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#base64格式字符串" class="sidebar-link">base64格式字符串</a></li></ul></li><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#传输文件" class="sidebar-link">传输文件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/插件应用/插件js-网络请求axios.html#formdata" class="sidebar-link">formdata</a></li></ul></li></ul></li><li><a href="/插件应用/插件vue-vant.html" class="sidebar-link">插件vue-vant</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>一些案例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/经典案例/经典案例vue-图片格式转换.html" class="sidebar-link">经典案例vue-图片格式转换</a></li><li><a href="/经典案例/经典案例js-渲染分页.html" class="sidebar-link">经典案例js-渲染分页</a></li><li><a href="/经典案例/经典案例admin常用设置.html" class="sidebar-link">经典案例admin常用设置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>网络相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/网络/网络-跨域.html" class="sidebar-link">网络-跨域</a></li><li><a href="/网络/网络-协议&amp;ajax.html" class="sidebar-link">网络-协议&amp;ajax</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>VueSomthing</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/VueSomthing/Vue数据代理.html" class="sidebar-link">Vue数据代理</a></li><li><a href="/VueSomthing/Vue2原理理解.html" class="sidebar-link">Vue2原理理解</a></li><li><a href="/VueSomthing/Vue-router.html" class="sidebar-link">Vue-router</a></li><li><a href="/VueSomthing/Vue2img&amp;cos.html" class="sidebar-link">Vue2img&amp;cos</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="axios插件应用"><a href="#axios插件应用" class="header-anchor">#</a> axios插件应用</h2> <h3 id="简单应用"><a href="#简单应用" class="header-anchor">#</a> 简单应用</h3> <div class="language-js extra-class"><pre class="language-js"><code>axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">'http://ajax-xxx-api-xxx.xxxxx.net'</span><span class="token punctuation">;</span>
+<span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'post'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://ajaxxxxx.xxxxx.net/api/xxxxx'</span><span class="token punctuation">,</span>
+        <span class="token comment">// params默认会自动将数据转换成查询字符串格式，并自动拼接到url后面</span>
+    	<span class="token comment">// 当后端给是请求参数而不是请求体时使用params,但依然是json格式，get方法请求格式为query时为params</span>
+        <span class="token comment">// params: {</span>
+        <span class="token comment">//   bookname: '西游记',</span>
+        <span class="token comment">//   id: 1,</span>
+        <span class="token comment">// },</span>
+        <span class="token comment">// data里的数据就是请求体</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token string">'bookname=红楼梦2&amp;author=bbb'</span><span class="token punctuation">,</span><span class="token comment">//java要求为请求体查询字符串格式</span>
+    	<span class="token comment">//data:{</span>
+            
+        <span class="token comment">//} java要求为请求体JSON格式</span>
+        <span class="token comment">// 如果请求超时，会自动执行catch里的函数</span>
+        <span class="token literal-property property">timeout</span><span class="token operator">:</span> <span class="token number">15000</span><span class="token punctuation">,</span><span class="token comment">//设置请求时间，测试此部分功能将Networks中nothrottling改为 slow 3G</span>
+        <span class="token function-variable function">onDownloadProgress</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 这里可以获取到文件下载的进度</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">onUploadProgress</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 这里可以获取到文件上传的进度</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// `onUploadProgress` 允许为上传处理进度事件onUploadProgress: function (progressEvent) {},// `onDownloadProgress` 允许为下载处理进度事件</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token comment">// 如果请求成功 2xx，会自动执行then里的函数</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'成功'</span><span class="token punctuation">)</span>
+          <span class="token comment">// axios插件会自动将json格式的字符串解析成js对象或数组，并放在res.data中</span>
+          <span class="token comment">// axios 内部会自动调用JSON.parse()</span>
+	      location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'url'</span><span class="token comment">//转到url</span>
+    	<span class="token comment">//包含整个 URL 的一个DOMString</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 错误提示</span>
+          <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'失败'</span><span class="token punctuation">)</span>
+          <span class="token comment">// 查看错误信息</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="拦截器"><a href="#拦截器" class="header-anchor">#</a> 拦截器</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 添加请求拦截器  在发送请求之前都会自动调用这个方法</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> token <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 只要url路径以 /my 开头的，但是又没有token的，通通跳转到登录页面</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>config<span class="token punctuation">.</span>url<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">'/my'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'/project/login/login.html'</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 在这里对url进行统一拼接</span>
+    config<span class="token punctuation">.</span>url <span class="token operator">=</span> <span class="token string">'http://big-event-api-t.itheima.net'</span> <span class="token operator">+</span> config<span class="token punctuation">.</span>url
+    <span class="token comment">// 统一添加token</span>
+    config<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Authorization <span class="token operator">=</span> token
+    <span class="token comment">// 在发送请求之前做些什么</span>
+    <span class="token keyword">return</span> config
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对请求错误做些什么</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// 添加响应拦截器  当浏览器拿到响应后都会先自动调用这个方法，然后再调用then或catch里的方法</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span>
+      response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>message <span class="token operator">===</span> <span class="token string">'身份认证失败！'</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span>
+      location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'/project/login/login.html'</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 放行</span>
+    <span class="token keyword">return</span> response
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    layer<span class="token punctuation">.</span><span class="token function">msg</span><span class="token punctuation">(</span><span class="token string">'网络异常，请稍后再试'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 对响应错误做点什么</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h2 id="传输图片"><a href="#传输图片" class="header-anchor">#</a> 传输图片</h2> <h3 id="普通图片"><a href="#普通图片" class="header-anchor">#</a> 普通图片</h3> <div class="language-html extra-class"><pre class="language-html"><code> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+        <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>input_file<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">accept</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>image/png, image/jpeg<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#input_file'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'change'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// this.files[0] 用户选择的第一张图片, 不是图片的url地址，但是&lt;img&gt; 里的src属性要的是一个图片的url地址，所以我们需要通过URL.createObjectURL() 这个方法把图片转成成一个url地址</span>
+  <span class="token keyword">let</span> img_url <span class="token operator">=</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="base64格式字符串"><a href="#base64格式字符串" class="header-anchor">#</a> base64格式字符串</h3> <p>将图片转成base64好处是减少页面的http请求,个人建议用在那种多页面用同一张比较小的图，因为大的图转码生成的字符串编码会很长,写入页面影响页面的可读性，不怎么方面后期的调试。</p> <p>该方法就是通过javascript中的canvas属性将图片转成base64，主要用到了canvas中的toDataUrl方法，该方法可以将canvas转成base64，所以关键点就是先获取图片的宽高，再将图片放入canvas中，再使用toDataUrl就可以转成base64了。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//一般应用 </span>
+<span class="token comment">// 把canvas图片转成成base64</span>
+  <span class="token keyword">let</span> img_base64 <span class="token operator">=</span> img_100<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token string">'image/jpeg'</span><span class="token punctuation">)</span>
+  
+<span class="token comment">//HTMLCanvasElement.toDataURL(type, encoderOptions)</span>
+<span class="token comment">//HTMLCanvasElement.toDataURL(type, encoderOptions) 方法返回一个包含图片展示的 data URI 。可以使用 type 参数其类型，默认为 PNG 格式。图片的分辨率为 96dpi。</span>
+  
+  <span class="token comment">// 由于base64格式里有很多特殊字符，比如：\:等，所以需要对它进行编码</span>
+  <span class="token comment">// encodeURIComponent(img_base64)</span>
+  <span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>img_base64<span class="token punctuation">)</span>
+
+
+</code></pre></div><p>知乎解法：如何保证每次更新都是最新的图片而不是本地缓存</p> <p>canvas，该方法就是通过javascript中的canvas属性将图片转成base64，主要用到了canvas中的toDataUrl方法，该方法可以将canvas转成base64，所以关键点就是先获取图片的宽高，再将图片放入canvas中，再使用toDataUrl就可以转成base64了。如果在本地引用网络图片可能会出现报错：Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported. 因为此时会产生跨域，我们在使用canvas.toDataURL时，如果DOM内存在图片资源，该资源所在的web-server是不支持跨域的，保存图片是不会成功的，所以最好每一次都加个随机数，以保证源都是最新的，不走缓存，这样每次刷新或更新图片就能正常显示了。</p> <div class="language-html extra-class"><pre class="language-html"><code>html&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>通过filereader接口读取文件<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">function</span> <span class="token function">getBase64Image</span><span class="token punctuation">(</span><span class="token parameter">img</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;canvas&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        canvas<span class="token punctuation">.</span>width <span class="token operator">=</span> img<span class="token punctuation">.</span>width<span class="token punctuation">;</span>
+        canvas<span class="token punctuation">.</span>height <span class="token operator">=</span> img<span class="token punctuation">.</span>height<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> ctx <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">&quot;2d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctx<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> img<span class="token punctuation">.</span>width<span class="token punctuation">,</span> img<span class="token punctuation">.</span>height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> dataURL <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token string">&quot;image/png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> dataURL
+        <span class="token comment">// return dataURL.replace(&quot;data:image/png;base64,&quot;, &quot;&quot;);</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> img <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        img<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3922290090,3177876335&amp;fm=26&amp;gp=0.jpg?v='</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//此处自己替换本地图片的地址</span>
+        img<span class="token punctuation">.</span>crossOrigin<span class="token operator">=</span> <span class="token string">'anonymous'</span>
+        img<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">debugger</span>
+            <span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token function">getBase64Image</span><span class="token punctuation">(</span>img<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">var</span> img1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            img1<span class="token punctuation">.</span>src <span class="token operator">=</span> data<span class="token punctuation">;</span>
+            document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>img1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><blockquote><p><a href="https://www.dsiab.com/post/3669" target="_blank" rel="noopener noreferrer">javascript 图片（image）转换base64-javascript技术分享 (dsiab.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h2 id="传输文件"><a href="#传输文件" class="header-anchor">#</a> 传输文件</h2> <h3 id="formdata"><a href="#formdata" class="header-anchor">#</a> formdata</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> fd <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 3. 将文件放到FormData对象中</span>
+fd<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">,</span> files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'post'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'url'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span>fd
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/插件应用/插件-flexible.js.html" class="prev">
+        插件-flexible.js
+      </a></span> <span class="next"><a href="/插件应用/插件vue-vant.html">
+        插件vue-vant
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8c529f76.js" defer></script><script src="/assets/js/2.cbedeaad.js" defer></script><script src="/assets/js/29.7bc22aec.js" defer></script>
+  </body>
+</html>
